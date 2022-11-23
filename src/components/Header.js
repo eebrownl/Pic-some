@@ -1,11 +1,16 @@
 import React from 'react'
+import {Link, Switch, Route} from 'react-router-dom'
+import cartIcon from './shopping-cart-line.png'
+
 
 function Header() {
     return(
         <header>
-            <h2>Pic Some</h2>
-            <i className="ri-shopping-cart-line ri-fw ri-2x"></i>
+            <Link to='/'><h2>Pic Some</h2></Link>
+            <img alt='cart src='{cartIcon}'/>
         </header>
+
+        
     )
 }
 
