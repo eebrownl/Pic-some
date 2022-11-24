@@ -134,6 +134,11 @@ a {
   text-decoration: none;
 }
 
+.cart-icon {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
 a:visited { color: var(--light-blue); }
 a:hover { color: var(--light-blue); }
 a:active { color: var(--light-blue); }

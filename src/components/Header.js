@@ -7,7 +7,7 @@ function Header() {
     return(
         <header>
             <Link to='/'><h2>Pic Some</h2></Link>
-            <img alt='cart src='{cartIcon}'/>
+            <Link to='/Cart'><img className='cart-icon' alt='cart' src={cartIcon}/></Link>
         </header>
 
         
