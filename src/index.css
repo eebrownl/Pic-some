@@ -85,6 +85,8 @@ img.image-grid {
   top: 5px;
   left: 5px;
   cursor: pointer;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 .ri-heart-fill {
@@ -103,6 +105,8 @@ img.image-grid {
   top: 5px;
   right: 5px;
   cursor: pointer;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 .wide {
