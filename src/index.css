@@ -63,7 +63,7 @@ div.order-button > button:disabled {
   margin: 20px 0;
 }
 
-.cart-item img {
+.cart-item .cart-pic {
   margin-right: auto;
   margin-left: 10px;   
 }
