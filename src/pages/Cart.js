@@ -4,7 +4,7 @@ import CartItem from '../components/CartItem'
 
 function Cart() {
     const [buttonText, setButtonText] = useState('Place Order')
-    const {cartItems} = useContext(Context)
+    const {cartItems, emptyCart} = useContext(Context)
     const cartItemElements = cartItems.map(item => (
         <CartItem key={item.id} item={item} />
     ))
@@ -14,12 +14,17 @@ function Cart() {
         return total
     }
 
+    const buttonElement = (cartItems.length > 0) && 
+    <div className='order-button'>
+        <button onClick={handleClick}>{buttonText}</button>
+    </div>
 
     function handleClick() {
         setButtonText('Ordering...')
         setTimeout(() => {
             console.log('order placed!')
             setButtonText('Place Order')
+            emptyCart()
         }, 3000)
     }
     
@@ -28,9 +33,7 @@ function Cart() {
             <h1>Check out</h1>
             <div>{cartItemElements}</div>
             <p className='total-cost'>{`Total: ${getTotal()}`}</p>
-            <div className='order-button'>
-                <button onClick={handleClick()}>{buttonText}</button>
-            </div>
+            {buttonElement}
         </main>
     )
 }
