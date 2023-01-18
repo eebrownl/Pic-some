@@ -1,6 +1,6 @@
 To run the code:
 
-In your terminal: $ git clone https://github.com/eebrownl/mastermind.git
+In your terminal: $ git clone https://github.com/eebrownl/Pic-some.git
 
 cd into the folder and install project's dependencies: $ npm install
 
